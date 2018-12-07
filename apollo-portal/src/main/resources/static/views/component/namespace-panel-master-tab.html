@@ -243,7 +243,7 @@
                                       data-tooltip="tooltip" data-placement="bottom" title="已生效的配置"
                                       ng-if="!config.isModified">已发布</span>
                             </td>
-                            <td width="15%" class="cursor-pointer" title="点击查看" ng-click="showText(config.item.key)">
+                            <td width="28%" class="cursor-pointer" title="点击查看" ng-click="showText(config.item.key)">
                                 <span ng-bind="config.item.key | limitTo: 250"></span>
                                 <span ng-bind="config.item.key.length > 250 ? '...' :''"></span>
                                 <span class="label label-default cursor-pointer" ng-if="config.hasBranchValue"
@@ -257,11 +257,11 @@
                                 <span class="label label-danger" ng-if="config.isDeleted"
                                       data-tooltip="tooltip" data-placement="bottom" title="删除的配置">删</span>
                             </td>
-                            <td width="30%" class="cursor-pointer" title="点击查看" ng-click="showText(config.item.value)">
+                            <td width="20%" class="cursor-pointer" title="点击查看" ng-click="showText(config.item.value)">
                                 <span ng-bind="config.item.value | limitTo: 250"></span>
                                 <span ng-bind="config.item.value.length > 250 ? '...': ''"></span>
                             </td>
-                            <td width="13%" title="{{config.item.comment}}">
+                            <td width="10%" title="{{config.item.comment}}">
                                 <span ng-bind="config.item.comment | limitTo: 250"></span>
                                 <span ng-bind="config.item.comment.length > 250 ?'...' : ''"></span>
                             </td>
@@ -352,7 +352,7 @@
                                       data-tooltip="tooltip" data-placement="bottom" title="已生效的配置"
                                       ng-if="!config.isModified">已发布</span>
                             </td>
-                            <td width="15%" class="cursor-pointer" title="点击查看" ng-click="showText(config.item.key)">
+                            <td width="28%" class="cursor-pointer" title="点击查看" ng-click="showText(config.item.key)">
                                 <span ng-bind="config.item.key | limitTo: 250"></span>
                                 <span ng-bind="config.item.key.length > 250 ? '...' :''"></span>
                                 <span class="label label-default cursor-pointer" ng-if="config.hasBranchValue"
@@ -366,11 +366,11 @@
                                 <span class="label label-danger" ng-if="config.isDeleted"
                                       data-tooltip="tooltip" data-placement="bottom" title="删除的配置">删</span>
                             </td>
-                            <td width="30%" class="cursor-pointer" title="点击查看" ng-click="showText(config.item.value)">
+                            <td width="20%" class="cursor-pointer" title="点击查看" ng-click="showText(config.item.value)">
                                 <span ng-bind="config.item.value | limitTo: 250"></span>
                                 <span ng-bind="config.item.value.length > 250 ? '...': ''"></span>
                             </td>
-                            <td width="13%" title="{{config.item.comment}}">
+                            <td width="10%" title="{{config.item.comment}}">
                                 <span ng-bind="config.item.comment | limitTo: 250"></span>
                                 <span ng-bind="config.item.comment.length > 250 ?'...' : ''"></span>
                             </td>
@@ -487,17 +487,17 @@
                                 <tbody>
                                 <tr ng-repeat="config in namespace.publicNamespace.viewItems |orderBy:col:desc"
                                     ng-if="config.item.key && !config.isModified && !config.isDeleted">
-                                    <td width="15%" class="cursor-pointer" title="点击查看"
+                                    <td width="30%" class="cursor-pointer" title="点击查看"
                                         ng-click="showText(config.item.key)">
                                         <span ng-bind="config.item.key | limitTo: 250"></span>
                                         <span ng-bind="config.item.key.length > 250 ? '...' :''"></span>
                                     </td>
-                                    <td width="35%" class="cursor-pointer" title="点击查看"
+                                    <td width="20%" class="cursor-pointer" title="点击查看"
                                         ng-click="showText(config.item.value)">
                                         <span ng-bind="config.item.value | limitTo: 250"></span>
                                         <span ng-bind="config.item.value.length > 250 ? '...': ''"></span>
                                     </td>
-                                    <td width="15%" title="{{config.item.comment}}">
+                                    <td width="10%" title="{{config.item.comment}}">
                                         <span ng-bind="config.item.comment | limitTo: 250"></span>
                                         <span ng-bind="config.item.comment.length > 250 ?'...' : ''"></span>
                                     </td>
@@ -562,7 +562,7 @@
                             <tbody>
                             <tr ng-repeat="config in namespace.publicNamespace.viewItems |orderBy:col:desc"
                                 ng-if="config.item.key && (config.isModified || config.isDeleted)">
-                                <td width="20%" class="cursor-pointer" title="点击查看"
+                                <td width="30%" class="cursor-pointer" title="点击查看"
                                     ng-click="showText(config.item.key)">
                                     <span ng-bind="config.item.key | limitTo: 250"></span>
                                     <span ng-bind="config.item.key.length > 250 ? '...' :''"></span>
@@ -574,12 +574,12 @@
                                     <span class="label label-danger" ng-if="config.isDeleted"
                                           data-tooltip="tooltip" data-placement="bottom" title="删除的配置">删</span>
                                 </td>
-                                <td width="25%" class="cursor-pointer" title="点击查看"
+                                <td width="20%" class="cursor-pointer" title="点击查看"
                                     ng-click="showText(config.oldValue)">
                                     <span ng-bind="config.oldValue | limitTo: 250"></span>
                                     <span ng-bind="config.oldValue.length > 250 ? '...': ''"></span>
                                 </td>
-                                <td width="25%" class="cursor-pointer" title="点击查看"
+                                <td width="20%" class="cursor-pointer" title="点击查看"
                                     ng-click="showText(config.item.value)">
                                     <span ng-bind="config.item.value | limitTo: 250"></span>
                                     <span ng-bind="config.item.value.length > 250 ? '...': ''"></span>

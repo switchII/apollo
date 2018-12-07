@@ -103,6 +103,11 @@ pre {
     font-size: 25px;
 }
 
+.logo img{
+	height: 35px !important ;
+    margin-top: -8px !important ;
+}
+
 .i-20 {
     height: 20px;
     width: 20px;
@@ -154,14 +159,35 @@ pre {
 
 /*panel*/
 .panel {
-    border: 1px solid #ddd;
+    border: 0px solid #ddd;
+    border-radius: 2px !important ;
+    box-shadow: none;
 }
 
 table th {
     text-align: center;
 }
 
-/*首页*/
+hr{
+	border-top: 1px solid #f1f2f7 !important ;
+}
+
+/* list */
+.list-group-item:first-child {
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+}
+
+.list-group-item:last-child{
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+}
+
+.list-group-item{
+	border: 0px solid #ddd;
+}
+
+/*棣栭〉*/
 .site-notice {
     padding: 5px 0;
     text-align: center;
@@ -218,7 +244,7 @@ table th {
 
 .side-bar {
     position: absolute;
-    width: 195px;
+    width: 295px;
     top: 85px;
     left: 15px;
     margin-bottom: 25px;
@@ -235,7 +261,7 @@ table th {
 }
 
 .view-mode-1 {
-    margin-left: 235px;
+    margin-left: 335px;
     padding-right: 15px;
 }
 
@@ -275,6 +301,7 @@ table th {
     border-color: #eff2f7;
     font-size: 16px;
     font-weight: 300;
+    border-width: 0px;
 }
 
 .panel-heading .header-namespace {
@@ -292,7 +319,7 @@ table th {
 
 #treeview .list-group .list-group-item {
     border: 0;
-    border-top: 1px solid #eff2f7;
+    border-top: 0px solid #eff2f7;
 }
 
 .project-info th {
@@ -338,6 +365,11 @@ table th {
 .config-item-container .form-control[disabled] {
     background: #ffffff;
     border: 0;
+}
+
+.form-control{
+	border-radius: 2px !important ;
+	box-shadow: none !important ;
 }
 
 .config-item-container .second-panel-heading .ns_btn {
@@ -421,6 +453,15 @@ table th {
 
 .namespace-panel .namespace-view-table table {
     table-layout: inherit;
+    border: 1px solid #f1f2f7;
+}
+
+.table-bordered > thead > tr > th, .table-bordered > thead > tr > td {
+    border-bottom-width: 1px !important ;
+}
+
+.table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {
+    border: 1px solid #f1f2f7 !important ;
 }
 
 .namespace-panel .namespace-view-table td {
@@ -460,6 +501,15 @@ table th {
 
 .namespace-panel .rules-manage-view {
     padding: 45px 20px;
+}
+
+.btn-sm, .btn-group-sm > .btn {
+	border-radius:2px !important ;
+	border-width:0px !important ;
+}
+
+.btn-success{
+	background-color:#0052CC !important ;
 }
 
 .line {
@@ -513,7 +563,7 @@ table th {
     padding: 5px 0 5px 50px;
 }
 
-/*搜索框*/
+/*鎼滅储妗�*/
 ::-webkit-scrollbar {
     width: 0;
     height: 0;
