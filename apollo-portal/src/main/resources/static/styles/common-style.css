@@ -103,11 +103,6 @@ pre {
     font-size: 25px;
 }
 
-.logo img{
-	height: 35px !important ;
-    margin-top: -8px !important ;
-}
-
 .i-20 {
     height: 20px;
     width: 20px;
@@ -159,35 +154,14 @@ pre {
 
 /*panel*/
 .panel {
-    border: 0px solid #ddd;
-    border-radius: 2px !important ;
-    box-shadow: none;
+    border: 1px solid #ddd;
 }
 
 table th {
     text-align: center;
 }
 
-hr{
-	border-top: 1px solid #f1f2f7 !important ;
-}
-
-/* list */
-.list-group-item:first-child {
-    border-top-right-radius: 2px;
-    border-top-left-radius: 2px;
-}
-
-.list-group-item:last-child{
-    border-top-right-radius: 2px;
-    border-top-left-radius: 2px;
-}
-
-.list-group-item{
-	border: 0px solid #ddd;
-}
-
-/*棣栭〉*/
+/*首页*/
 .site-notice {
     padding: 5px 0;
     text-align: center;
@@ -244,7 +218,7 @@ hr{
 
 .side-bar {
     position: absolute;
-    width: 295px;
+    width: 195px;
     top: 85px;
     left: 15px;
     margin-bottom: 25px;
@@ -261,7 +235,7 @@ hr{
 }
 
 .view-mode-1 {
-    margin-left: 335px;
+    margin-left: 235px;
     padding-right: 15px;
 }
 
@@ -301,7 +275,6 @@ hr{
     border-color: #eff2f7;
     font-size: 16px;
     font-weight: 300;
-    border-width: 0px;
 }
 
 .panel-heading .header-namespace {
@@ -319,18 +292,22 @@ hr{
 
 #treeview .list-group .list-group-item {
     border: 0;
-    border-top: 0px solid #eff2f7;
+    border-top: 1px solid #eff2f7;
 }
 
 .project-info th {
     text-align: right;
     padding: 4px 6px;
-    white-space: nowrap;
+    width: 5em;
 }
 
 .project-info td {
     border-bottom: 1px dotted gray;
     padding: 4px 6px;
+}
+
+.project-info td span {
+    margin-right: 5px;
 }
 
 #config-info {
@@ -365,11 +342,6 @@ hr{
 .config-item-container .form-control[disabled] {
     background: #ffffff;
     border: 0;
-}
-
-.form-control{
-	border-radius: 2px !important ;
-	box-shadow: none !important ;
 }
 
 .config-item-container .second-panel-heading .ns_btn {
@@ -435,9 +407,7 @@ hr{
 }
 
 .namespace-panel .namespace-attribute-public {
-    background: #31708f;
-    width: 40px;
-    cursor: pointer;
+    margin-right:5px;
 }
 
 .namespace-panel .second-panel-heading .nav-tabs {
@@ -453,15 +423,6 @@ hr{
 
 .namespace-panel .namespace-view-table table {
     table-layout: inherit;
-    border: 1px solid #f1f2f7;
-}
-
-.table-bordered > thead > tr > th, .table-bordered > thead > tr > td {
-    border-bottom-width: 1px !important ;
-}
-
-.table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {
-    border: 1px solid #f1f2f7 !important ;
 }
 
 .namespace-panel .namespace-view-table td {
@@ -501,15 +462,6 @@ hr{
 
 .namespace-panel .rules-manage-view {
     padding: 45px 20px;
-}
-
-.btn-sm, .btn-group-sm > .btn {
-	border-radius:2px !important ;
-	border-width:0px !important ;
-}
-
-.btn-success{
-	background-color:#0052CC !important ;
 }
 
 .line {
@@ -563,7 +515,7 @@ hr{
     padding: 5px 0 5px 50px;
 }
 
-/*鎼滅储妗�*/
+/*搜索框*/
 ::-webkit-scrollbar {
     width: 0;
     height: 0;
